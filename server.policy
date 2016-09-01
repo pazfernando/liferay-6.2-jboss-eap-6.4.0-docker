@@ -1,0 +1,41 @@
+/* AUTOMATICALLY GENERATED ON Thu Jul 28 14:24:01 ECT 2016*/
+/* DO NOT EDIT */
+
+/*
+grant {
+  permission java.util.PropertyPermission "*", "read";
+  permission java.util.PropertyPermission "com.liferay.*", "write";
+  permission java.util.PropertyPermission "http.header.secure.x.*", "write";
+  permission java.util.PropertyPermission "env.*", "write";
+  permission java.util.PropertyPermission "ical4j.*", "write";
+  permission java.util.PropertyPermission "user.country", "write";
+};
+*/
+
+/*
+grant {
+  permission java.util.PropertyPermission "*", "read";
+  permission java.util.PropertyPermission "*", "write";
+};
+
+grant {
+  permission java.lang.RuntimePermission "getClassLoader";
+  permission java.lang.RuntimePermission "getenv.*";
+  permission java.lang.RuntimePermission "createStdioContext";
+  permission java.lang.RuntimePermission "createClassLoader";
+};
+
+grant {
+  permission java.util.logging.LoggingPermission "control";
+};
+
+grant {
+  permission org.jboss.vfs.VirtualFilePermission "/content/-", "read";
+  permission org.jboss.vfs.VirtualFilePermission "/opt/rh/jboss-eap-6.4/standalone/deployments/ROOT.war/-", "read";
+};
+*/
+
+grant {
+    permission java.security.AllPermission;
+};
+
