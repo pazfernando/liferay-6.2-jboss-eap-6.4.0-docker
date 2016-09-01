@@ -7,12 +7,12 @@
 
 This implementation is based on https://github.com/pazfernando/liferay-6.2-jboss-eap-6.4.0-docker, so you need to built the previous container with the name *jboss-eap:6.4.0* as suggested in the README.md project file.
 
-#### Database:
-We use Oracle as BDD, that is the reason why ojdbc.jar was included.  So, edit the my_standalone.xml file from the line 142 to 154 with your BDD information.  After that, rename this file as standalone.xml.
+##### Database:
+We use Oracle as BDD, that is the reason why ojdbc.jar was included.  So, if you will work with JNDI, edit the my_standalone.xml file from the line 142 to 154 with your BDD information, otherwise do nothing.  After that, rename this file as standalone.xml.
 
 Remember that the Oracle user needs `connect`, `resource` and `sequence` privileges to let Liferay creates the initial structure.
 
-#### Let's do it:
+### Let's do it:
 The first step is built image ``docker build -t jboss-eap-liferay:6.4.0-6.2 .``
 The second step es run the container ``docker run --name jboss-eap-liferay-6.4.0-6.2 -p 8085:8080 -p 9995:9990 -d jboss-eap-liferay:6.4.0-6.2``
 
