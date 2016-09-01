@@ -9,7 +9,6 @@ COPY module-sun.xml /tmp/
 COPY standalone.xml /tmp/
 COPY standalone.conf /tmp/
 COPY server.policy /tmp/
-# COPY liferay-portal-6.2-ce-ga6-20160112152609836.war /tmp/$LIFERAY_62.war
 COPY startup-liferay.sh /tmp/
 
 RUN mkdir -p $EAP_HOME/modules/com/liferay/portal/main \
