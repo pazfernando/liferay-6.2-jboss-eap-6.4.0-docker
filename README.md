@@ -5,7 +5,7 @@
 - For ojdcb7.jar http://www.oracle.com/technetwork/licenses/distribution-license-152002.html
 - For automatic downloads of liferay https://www.liferay.com/downloads/ce-license, and all internal dependencies licenses
 
-This implementation is based on https://github.com/pazfernando/liferay-6.2-jboss-eap-6.4.0-docker, so you need to built the previous container with the name *jboss-eap:6.4.0* as suggested in the README.md project file.
+This implementation is based on https://github.com/pazfernando/jboss-eap-6.4.0-docker, so you need to built the previous container with the name *jboss-eap:6.4.0* as suggested in the README.md project file.
 
 ##### Database:
 We use Oracle as BDD, that is the reason why ojdbc.jar was included.  So, if you will work with JNDI, edit the **my_standalone.xml** file from the line 142 to 154 with your BDD information, otherwise do nothing.  After that, rename this file as **standalone.xml**.
