@@ -18,9 +18,9 @@ The second step es run the container ``docker run --name jboss-eap-liferay-6.4.0
 
 Of course the name *jboss-eap-liferay-6.4.0-6.2* could be different according your needs.
 
-This installation was made replacing the "ROOT context" as "the Liferay deployment context" so you can access to this portal with http://localhost:8085
+This installation was made replacing the "ROOT context" as "the Liferay deployment context" so you can access to this portal with [http://localhost:8085](http://localhost:8085/), _(please wait some secs until liferay was completed deployed :))_
 
-The console access is on `http://localhost:9995/` URL, with the following credentials:
+The console access is on [http://localhost:9995/](http://localhost:9995/) URL, with the following credentials:
 - User: admin
 - Password: welcome1!
 
