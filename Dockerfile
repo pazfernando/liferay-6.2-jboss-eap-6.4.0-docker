@@ -6,7 +6,7 @@ ENV LIFERAY_62 liferay-portal-6.2-ce-ga6
 COPY ojdbc7.jar /tmp/
 COPY module.xml /tmp/
 COPY module-sun.xml /tmp/
-COPY standalone.xml /tmp/
+COPY my_standalone.xml /tmp/standalone.xml
 COPY standalone.conf /tmp/
 COPY server.policy /tmp/
 COPY startup-liferay.sh /tmp/
